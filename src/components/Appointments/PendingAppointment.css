@@ -1,0 +1,56 @@
+.custom-table {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+
+.custom-table thead {
+  background-color: #343a40;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f9f9f9;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.custom-table th,
+.custom-table td {
+  vertical-align: middle;
+  padding: 14px 16px;
+  font-size: 15px;
+}
+
+.table-heading {
+  font-weight: 600;
+  font-size: 26px;
+  color: #2c3e50;
+  padding-left: 10px;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.status-badge.completed {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-badge.pending {
+  background-color: #ffc107;
+  color: #343a40;
+}
+
+.status-badge.rejected {
+  background-color: #dc3545;
+  color: white;
+}

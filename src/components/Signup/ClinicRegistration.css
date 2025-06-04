@@ -1,0 +1,30 @@
+.over{
+    scrollbar-width: none;
+}
+
+.clinic-body{
+    /* background-image: url(https://png.pngtree.com/background/20220716/original/pngtree-illustration-form-registration-appointment-medical-life-background-design-picture-image_1645287.jpg); */
+    background-image: url('../../assests/10554240.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.form-container{
+    max-width:850px ;
+    width: 100%;
+    border-radius: 20px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    max-height: 90vh;
+}
+
+.form-label{
+    font-weight: bold;
+    color: black;
+}
+

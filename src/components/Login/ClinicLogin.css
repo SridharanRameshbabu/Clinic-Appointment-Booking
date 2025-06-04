@@ -1,0 +1,9 @@
+.clinic-login{
+    background-image: url('../../assests/clipboard-stethoscope.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}

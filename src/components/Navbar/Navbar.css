@@ -1,0 +1,31 @@
+.navbar{
+    background-color: rgb(255, 179, 179); 
+    z-index: 999;
+    position: fixed!important;
+    top: 0 !important;
+    width: 100%;
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link{
+    color: black !important;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.navbar .dropdown-menu {
+    background-color: #007bff;
+}
+
+.navbar .dropdown-menu a {
+    color: black !important;
+}

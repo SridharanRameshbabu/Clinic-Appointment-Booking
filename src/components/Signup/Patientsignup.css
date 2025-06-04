@@ -1,0 +1,51 @@
+.patient-signup-container {
+  background: url('../../assests/clipboard-stethoscope.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-card {
+  background: rgba(255, 255, 255, 0.15); /* semi-transparent */
+  backdrop-filter: blur(15px); /* glassy blur */
+  -webkit-backdrop-filter: blur(15px); /* for Safari */
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* frosted edge */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 850px;
+  overflow-y: auto;
+}
+
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color:black;
+}
+
+.form-control {
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+button[type="submit"] {
+  border-radius: 50px;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* @media (max-width: 768px) {
+  .signup-card {
+    padding: 20px;
+  }
+} */

@@ -1,0 +1,17 @@
+.how-steps-section {
+  background-color: #343a40; /* dark bg */
+}
+
+.how-step-card {
+  width: 220px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.how-step-card:hover {
+  transform: translateY(-5px);
+}
+
+.card{
+    background-color: white !important;
+}
