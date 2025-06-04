@@ -1,31 +1,59 @@
-.navbar{
-    background-color: rgb(255, 179, 179); 
+/* Navbar base styling */
+.navbar {
+    background: linear-gradient(90deg, #ff6b6b, #ff9a9e); 
     z-index: 999;
-    position: fixed!important;
+    position: fixed !important;
     top: 0 !important;
     width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand{
-    color: white;
-    font-size: 20px;
+/* Logo & Brand */
+.navbar-brand {
+    font-size: 24px;
     font-weight: bold;
+    color: white !important;
+    display: flex;
+    align-items: center;
 }
 
-.navbar-nav .nav-link{
-    color: black !important;
-    font-size: 20px;
-    font-weight: bold;
-    border: 1px solid white;
+/* Nav links */
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+    padding: 8px 16px;
+    color: #333 !important;
     background-color: white;
-    border-radius: 5px;
-    padding: 3px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: none;
 }
 
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+    background-color: #ffe3e3;
+    color: #d90429 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive toggler button */
+.navbar-toggler {
+    border: none;
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+/* Optional dropdown if you use later */
 .navbar .dropdown-menu {
-    background-color: #007bff;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
 .navbar .dropdown-menu a {
-    color: black !important;
+    color: #333 !important;
+    font-weight: 500;
 }
