@@ -5,6 +5,7 @@ import bookappointment from "../../assests/medical-appointment.png"
 import myappointment from "../../assests/schedule.png"
 import clinic from "../../assests/cs.png"
 import Footer from '../Footer/Footer'
+import {Link} from 'react-router-dom'
 
 const PatientDashboard = () => {
     const user = JSON.parse(localStorage.getItem("patientData"))
@@ -45,7 +46,7 @@ const PatientDashboard = () => {
                   <img src={item.image} alt="My Appointments" className='img-fluid' style={{width: "100px", height: "100px"}}/>
                   <h5 className='card-title'>{item.title}</h5>
                   <p className='card-text'>{item.description}</p>
-                  <a href={item.link} className='btn btn-primary'>{item.linktext}</a>
+                  <Link to={item.link} className='btn btn-primary'>{item.linktext}</Link>
                 </div>
               </div>
             </div>

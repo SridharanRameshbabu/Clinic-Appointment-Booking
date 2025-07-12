@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ClinicRegistration.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 
 const ClinicRegistration = () => {
 
@@ -297,7 +297,7 @@ const ClinicRegistration = () => {
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" name="agree" checked={formData.agree} onChange={handleChange} />
                     <label className="form-check-label">
-                      I agree to the <a href="/" className="text-primary">Terms and Conditions</a>.
+                      I agree to the <Link to="/" className="text-primary">Terms and Conditions</Link>.
                     </label>
                   </div>
                 </div>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Patientsignup.css";
 import { FaUser, FaEnvelope, FaLock, FaPhone, FaMapMarkerAlt, FaTransgender, FaCalendarAlt } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 // import image from "../../assests/clipboard-stethoscope.jpg";
 
 const Patientsignup = () => {
@@ -95,7 +95,7 @@ const Patientsignup = () => {
           </div>
 
           <button type="submit" className="btn btn-primary w-100 mt-4">Register</button>
-          <p className="text-center mt-3" style={{ color: "black" }}>Already have an account? <a href="/patientlogin" className="text-decoration-none text-primary">Login</a></p>
+          <p className="text-center mt-3" style={{ color: "black" }}>Already have an account? <Link to="/patientlogin" className="text-decoration-none text-primary">Login</Link></p>
         </form>
       </div>
     </div>

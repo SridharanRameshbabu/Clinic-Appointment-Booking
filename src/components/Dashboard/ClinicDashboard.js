@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import completed from "../../assests/appointment.png"
 import pending from "../../assests/clock.png"
+import {Link} from 'react-router-dom'
 
 
 const ClinicDashboard = () => {
@@ -19,7 +20,7 @@ const ClinicDashboard = () => {
         <h1>{clinicdetail.clinicName}</h1>
         <div className='row my-4 justify-content-center'>
           <div className='col-md-4'>
-            <a href="/patients" className='text-decoration-none'>
+            <Link to="/patients" className='text-decoration-none'>
               <div className='card p-2'>
                 <div className='d-flex justify-content-between align-items-center'>
                   <img src={completed} alt="completed appointments" style={{width:"100px"}} />
@@ -29,11 +30,11 @@ const ClinicDashboard = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
 
           <div className='col-md-4'>
-            <a href="/pendingappointments" className='text-decoration-none'>
+            <Link to="/pendingappointments" className='text-decoration-none'>
             <div className='card p-2'>
               <div className='d-flex justify-content-between align-items-center'>
                 <img src={pending} alt="completed appointments" style={{width:"100px"}} />
@@ -43,7 +44,7 @@ const ClinicDashboard = () => {
                 </div>
               </div>
             </div>
-            </a>
+            </Link>
           </div>
 
         </div>

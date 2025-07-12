@@ -1,7 +1,7 @@
 import React, {useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./PatientLogin.css"; 
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const PatientLogin = () => {
 
@@ -55,9 +55,9 @@ const PatientLogin = () => {
                 <div className="text-center mt-3">
                   <p>
                     Don't have an account?{" "}
-                    <a href="/patientregister" className="text-decoration-none">
+                    <Link to="/patientregister" className="text-decoration-none">
                       Register here
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </form>

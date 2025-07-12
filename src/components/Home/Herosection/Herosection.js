@@ -1,5 +1,6 @@
 import React from 'react';
 import './Herosection.css';
+import {Link} from 'react-router-dom'
 
 const Herosection = () => {
 
@@ -10,9 +11,9 @@ const Herosection = () => {
         <h1 className="display-3 pt-5">Book Trusted Doctor Appointments Instantly with Visit Dr</h1>
         <p className="lead">Find experienced doctors, schedule appointments, and manage your healthcare—all in one place.<br/>
 Trusted by patients. Recommended by professionals.</p>
-        <a href={usertype !== "patient" ? "/patientregister" : "/bookappointment"} className="btn btn-primary">
+        <Link to={usertype !== "patient" ? "/patientregister" : "/bookappointment"} className="btn btn-primary">
           Book an Appointment
-        </a>
+        </Link>
       </div>
     </div>
   );
